@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --pewter-blue: #81ADC8;
+    --black: #000000;
+    --davys-grey: #4D4D4D;
+    --vermillion: #CD4631;
+    --champagne: #F7EDE8;
+    --alice-blue: #EDF3F7;
+}
