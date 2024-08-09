@@ -3,17 +3,387 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Assets/Images/favicon.ico"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./Css/reset.css" />
-    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Podcast|Landing</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <!-- header -->
+    <div class="">
+      <div class="header">
+        <div class="header-left">
+          <div class="logo">
+            <img src="./Assets/Images/logo.png" alt="logo" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="#">Episodes</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">More</a></li>
+          </ul>
+        </div>
+        <div class="cta">
+          <button class="btn secondary-btn">RECENT EPISODES</button>
+          <button class="btn primary-btn">SUBSCRIBE</button>
+        </div>
+      </div>
+    </div>
+    <!-- header end -->
+
+    <!-- hero-section -->
+    <main class="hero-section">
+      <div class="hero-wrapper">
+        <h1 class="hero-title">Your Daily <span>Podcast</span></h1>
+        <p class="hero-desc">
+          We cover all kinds of categories and a weekly special guest.
+        </p>
+        <button class="btn primary-btn">SUBSCRIBE</button>
+      </div>
+      <div class="hero-slider">
+        <div class="slider">
+          <div class="slide">
+            <img src="./Assets/Images/cover1.png" alt="Image 1" />
+          </div>
+          <div class="slide">
+            <img src="./Assets/Images/cover2.png" alt="Image 2" />
+          </div>
+          <div class="slide">
+            <img src="./Assets/Images/cover3.png" alt="Image 3" />
+          </div>
+          <div class="slide">
+            <img src="./Assets/Images/cover4.png" alt="Image 4" />
+          </div>
+          <div class="slide">
+            <img src="./Assets/Images/cover5.png" alt="Image 5" />
+          </div>
+          <div class="slide">
+            <img src="./Assets/Images/cover6.png" alt="Image 6" />
+          </div>
+        </div>
+      </div>
+      <div class="platform container">
+        <h3 class="title">Supported by:</h3>
+        <img src="./Assets/Svgs/Spotify.svg" alt="..." />
+        <img src="./Assets/Svgs/GooglePodcast.svg" alt="..." />
+        <img src="./Assets/Svgs/Youtube.svg" alt="..." />
+      </div>
+      <img src="./Assets/Svgs/Scribble2.svg" alt="..." class="scribble" />
+    </main>
+    <!-- hero-section-end -->
+
+    <!-- about-section -->
+    <section class="about-section container">
+      <div class="title-wrapper">
+        <h2 class="section-title">
+          Talk. Listen. Get inspired by every minute of it.
+        </h2>
+      </div>
+      <div class="box-wrapper">
+        <div class="about-box">
+          <img src="./Assets/Svgs/Think.svg" alt="..." />
+          <p class="about-boxa-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            ac ultrices odio.
+          </p>
+        </div>
+        <div class="about-box">
+          <img src="./Assets/Svgs/Bulb.svg" alt="..." />
+          <p class="about-boxa-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            ac ultrices odio.
+          </p>
+        </div>
+      </div>
+      <div class="about-quote">
+        <img src="./Assets/Svgs//quote.svg" alt="..." />
+        <h4 class="quote">
+          One of the best daily podcasts that covers every topic on Spotify.
+        </h4>
+        <div class="writer">
+          <div class="avtar">
+            <img src="./Assets/Images/Avatar.png" alt="..." />
+          </div>
+          <div class="writer-name">John Smith,</div>
+          <div class="platform">
+            <img
+              src="./Assets/Svgs/SpotifySm.svg"
+              alt="..."
+              class="platform-logo"
+            />
+            <p class="post">Social Community Manager</p>
+          </div>
+        </div>
+      </div>
+      <img src="./Assets/Svgs/Scribble4.svg" alt="..." class="scribble" />
+    </section>
+    <!-- about-section-end -->
+
+    <!-- testimonials-section -->
+    <section class="testimonials-section">
+      <div class="title-wrapper">
+        <h2 class="section-title">
+          <img src="./Assets/Svgs/Sparkle2.svg" alt="..." class="left-hl" />What
+          our listeners say
+        </h2>
+        <p class="section-desc">Their experience throughout every platform</p>
+      </div>
+      <!-- slider -->
+      <div class="container">
+        <div class="slider-with-btn" data-slider>
+          <ul class="slider__track" data-slider-track>
+            <li>
+              <div class="slide">
+                <img src="./assets/svgs/quote.svg" alt="..." class="quote" />
+                <p class="slide-text">
+                  Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                  eiusmod tempor incidi ut labore et dolore magna aliqua.
+                </p>
+                <div class="writer">
+                  <div class="avtar">
+                    <img src="./Assets/Images/Avatar.png" alt="..." />
+                  </div>
+                  <div class="writer-name">Luna lovegood,</div>
+                  <div class="platform">
+                    <img
+                      src="./Assets/Svgs/SpotifySm.svg"
+                      alt="..."
+                      class="platform-logo"
+                    />
+                    <p class="post">Spotify</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <img src="./assets/svgs/quote.svg" alt="..." class="quote" />
+                <p class="slide-text">
+                  Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                  eiusmod tempor incidi ut labore et dolore magna aliqua.
+                </p>
+                <div class="writer">
+                  <div class="avtar">
+                    <img src="./Assets/Images/Avatar.png" alt="..." />
+                  </div>
+                  <div class="writer-name">Luna lovegood,</div>
+                  <div class="platform">
+                    <img
+                      src="./Assets/Svgs/SpotifySm.svg"
+                      alt="..."
+                      class="platform-logo"
+                    />
+                    <p class="post">Spotify</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <img src="./assets/svgs/quote.svg" alt="..." class="quote" />
+                <p class="slide-text">
+                  Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                  eiusmod tempor incidi ut labore et dolore magna aliqua.
+                </p>
+                <div class="writer">
+                  <div class="avtar">
+                    <img src="./Assets/Images/Avatar.png" alt="..." />
+                  </div>
+                  <div class="writer-name">Luna lovegood,</div>
+                  <div class="platform">
+                    <img
+                      src="./Assets/Svgs/SpotifySm.svg"
+                      alt="..."
+                      class="platform-logo"
+                    />
+                    <p class="post">Spotify</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <img src="./assets/svgs/quote.svg" alt="..." class="quote" />
+                <p class="slide-text">
+                  Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                  eiusmod tempor incidi ut labore et dolore magna aliqua.
+                </p>
+                <div class="writer">
+                  <div class="avtar">
+                    <img src="./Assets/Images/Avatar.png" alt="..." />
+                  </div>
+                  <div class="writer-name">Luna lovegood,</div>
+                  <div class="platform">
+                    <img
+                      src="./Assets/Svgs/SpotifySm.svg"
+                      alt="..."
+                      class="platform-logo"
+                    />
+                    <p class="post">Spotify</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <img src="./assets/svgs/quote.svg" alt="..." class="quote" />
+                <p class="slide-text">
+                  Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                  eiusmod tempor incidi ut labore et dolore magna aliqua.
+                </p>
+                <div class="writer">
+                  <div class="avtar">
+                    <img src="./Assets/Images/Avatar.png" alt="..." />
+                  </div>
+                  <div class="writer-name">Luna lovegood,</div>
+                  <div class="platform">
+                    <img
+                      src="./Assets/Svgs/SpotifySm.svg"
+                      alt="..."
+                      class="platform-logo"
+                    />
+                    <p class="post">Spotify</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <img src="./assets/svgs/quote.svg" alt="..." class="quote" />
+                <p class="slide-text">
+                  Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                  eiusmod tempor incidi ut labore et dolore magna aliqua.
+                </p>
+                <div class="writer">
+                  <div class="avtar">
+                    <img src="./Assets/Images/Avatar.png" alt="..." />
+                  </div>
+                  <div class="writer-name">Luna lovegood,</div>
+                  <div class="platform">
+                    <img
+                      src="./Assets/Svgs/SpotifySm.svg"
+                      alt="..."
+                      class="platform-logo"
+                    />
+                    <p class="post">Spotify</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <img src="./assets/svgs/quote.svg" alt="..." class="quote" />
+                <p class="slide-text">
+                  Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                  eiusmod tempor incidi ut labore et dolore magna aliqua.
+                </p>
+                <div class="writer">
+                  <div class="avtar">
+                    <img src="./Assets/Images/Avatar.png" alt="..." />
+                  </div>
+                  <div class="writer-name">Luna lovegood,</div>
+                  <div class="platform">
+                    <img
+                      src="./Assets/Svgs/SpotifySm.svg"
+                      alt="..."
+                      class="platform-logo"
+                    />
+                    <p class="post">Spotify</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="slider__buttons">
+            <button class="slider__button" data-slider-prev disabled>
+              <img src="./assets/svgs/ArrowLeftCircle.svg" alt="..." />
+            </button>
+            <button class="slider__button" data-slider-next>
+              <img src="./assets/svgs/ArrowRightCircle.svg" alt="..." />
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- slider end -->
+      <img src="./Assets/Svgs/Scribble4.svg" alt="..." class="scribble" />
+    </section>
+    <!-- testimonials-section-end -->
+
+    <!-- features-section -->
+    <section class="features-section container">
+      <div class="title-wrapper">
+        <h2 class="section-title">
+          <img
+            src="./Assets/Svgs/Sparkle2.svg"
+            alt="..."
+            class="right-hl"
+          />Membership benefits
+        </h2>
+        <p class="section-desc">Become our sponsor and get all benefits</p>
+      </div>
+      <div class="feature-wrapper">
+        <div class="feature">
+          <img src="./assets/svgs/Scribble.svg" alt="..." />
+          <h3 class="feature-title">Topic by Request</h3>
+          <p class="feature-desc">
+            Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod
+            tempor.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="./assets/svgs/Scribble.svg" alt="..." />
+          <h3 class="feature-title">Topic by Request</h3>
+          <p class="feature-desc">
+            Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod
+            tempor.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="./assets/svgs/Scribble.svg" alt="..." />
+          <h3 class="feature-title">Topic by Request</h3>
+          <p class="feature-desc">
+            Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod
+            tempor.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="./assets/svgs/Scribble.svg" alt="..." />
+          <h3 class="feature-title">Topic by Request</h3>
+          <p class="feature-desc">
+            Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod
+            tempor.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="./assets/svgs/Scribble.svg" alt="..." />
+          <h3 class="feature-title">Topic by Request</h3>
+          <p class="feature-desc">
+            Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod
+            tempor.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="./assets/svgs/Scribble.svg" alt="..." />
+          <h3 class="feature-title">Topic by Request</h3>
+          <p class="feature-desc">
+            Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod
+            tempor.
+          </p>
+        </div>
+      </div>
+      <button class="btn primary-btn">SEE PRICING</button>
+    </section>
+    <!-- features-section-end -->
+    <script src="./JS/script.js"></script>
   </body>
 </html>
