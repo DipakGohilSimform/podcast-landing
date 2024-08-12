@@ -36,8 +36,18 @@ body {
     transition: all 0.2s ease;
 }
 
+.primary-lg {
+    padding: 24px 48px;
+    box-shadow: 6px 6px 0px 0px #000 40;
+}
+
 .btn:hover {
     transform: scale(0.9);
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .primary-btn {
@@ -99,6 +109,7 @@ body {
     position: absolute;
     bottom: -80px;
     left: 50%;
+    transform: translate(-50%, 0);
     height: 150px;
     z-index: 5;
 }
@@ -156,4 +167,19 @@ body {
 
 .slider__buttons [disabled] {
     opacity: 0.5;
+}
+
+.tags {
+    display: flex;
+    gap: 6px;
+}
+
+.tags .tag {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19.2px;
+    color: var(--davys-grey);
+    border: 1px solid var(--davys-grey);
+    border-radius: 4px;
+    padding: 6px 12px;
 }
