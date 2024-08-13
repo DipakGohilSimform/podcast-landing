@@ -50,6 +50,17 @@ body {
     justify-content: center;
 }
 
+.btn-wrapper button {
+    position: relative;
+}
+
+.btn-wrapper button img {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    transform: scale(1.5);
+}
+
 .primary-btn {
     background-color: var(--black);
     color: var(--white);
@@ -68,6 +79,8 @@ body {
 .title-wrapper {
     position: relative;
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .title-wrapper .section-title {
@@ -80,6 +93,19 @@ body {
     color: var(--black);
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.title-wrapper .tag {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22.4px;
+    color: var(--vermillion);
+    padding: 3px 6px;
+    display: inline-block;
+    margin: 0 auto;
+    border: 1px solid var(--vermillion);
+    border-radius: 4px;
     margin-bottom: 20px;
 }
 
