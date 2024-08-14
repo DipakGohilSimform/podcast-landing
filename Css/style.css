@@ -64,7 +64,7 @@
 }
 
 .hero-section .hero-wrapper .hero-title {
-  max-width: 513px;
+  max-width: 535px;
   padding-top: 160px;
   font-size: 96px;
   font-weight: 700;
@@ -73,6 +73,12 @@
   text-align: center;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.hero-section .hero-wrapper .cta-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .hero-section .hero-wrapper .hero-title span {
@@ -127,6 +133,37 @@
   padding-block: 20px;
   border-top: 1px solid var(--davys-grey);
   border-bottom: 1px solid var(--davys-grey);
+}
+
+.hero-section .numbers-wrapper {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.hero-section .numbers-wrapper .number-card {
+  padding: 60px 95px;
+  border: 1.5px solid var(--black);
+  box-shadow: 6px 6px 0px 0px var(--vermillion);
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+
+.hero-section .numbers-wrapper .number-card .count {
+  font-size: 59.3px;
+  font-weight: 700;
+  line-height: 71.16px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--vermillion);
+}
+
+.hero-section .numbers-wrapper .number-card .count span {
+  color: var(--black);
 }
 
 
@@ -250,6 +287,20 @@
   width: 100px;
   height: 80px;
   transform: scale(2);
+}
+
+.about-section .about-wrapper {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 80px;
+  border-bottom: 0.5px solid var(--davys-grey);
+}
+
+.about-section .about-wrapper .content {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25.6px;
+  color: var(--davys-grey);
 }
 
 /* testimonials-section-style */
