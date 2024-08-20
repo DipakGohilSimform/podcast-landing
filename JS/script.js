@@ -1,25 +1,8 @@
-// const slider = document.querySelector(".slider");
-// let currentIndex = 0;
-// const slideWidth = slider.clientWidth;
-// const slideInterval = 3000; // 3 seconds
+// JavaScript to toggle the menu
+document.getElementById("hamburger").addEventListener("click", function () {
+  document.getElementById("nav-links").classList.toggle("active");
+});
 
-// function moveSlider() {
-//   currentIndex++;
-//   if (currentIndex >= slider.children.length) {
-//     slider.style.transition = "none";
-//     currentIndex = 0;
-//     slider.style.transform = `translateX(0px)`;
-//     setTimeout(() => {
-//       slider.style.transition = "transform 0.5s ease-in-out";
-//       currentIndex++;
-//       slider.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
-//     }, 50);
-//   } else {
-//     slider.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
-//   }
-// }
-
-// setInterval(moveSlider, slideInterval);
 const slider = document.querySelector("[data-slider]");
 
 const track = slider.querySelector("[data-slider-track]");

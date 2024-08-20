@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./Assets/Images/favicon.ico"
+      href="../Assets/Images/favicon.ico"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,20 +23,25 @@
     <!-- header -->
     <div class="header">
       <div class="header-left">
-        <div class="logo">
+        <a class="logo" href="/">
           <img src="../Assets/Images/logo.png" alt="logo" />
-        </div>
-        <ul class="nav-links">
+        </a>
+        <ul class="nav-links" id="nav-links">
           <li><a href="#">Episodes</a></li>
           <li><a href="/pages/about.html">About</a></li>
           <li><a href="#">More</a></li>
         </ul>
       </div>
+      <button class="hamburger" id="hamburger">
+        &#9776;
+        <!-- This is the hamburger icon -->
+      </button>
       <div class="cta">
         <button class="btn secondary-btn">BECOME SPONSOR</button>
         <button class="btn primary-btn">SUBSCRIBE</button>
       </div>
     </div>
+
     <!-- header end -->
 
     <!-- hero-section -->
@@ -116,10 +121,178 @@
         </h2>
       </div>
       <div class="founder-card-wrapper">
-        <div class="founder-card"></div>
+        <div class="founder-card">
+          <div class="left">
+            <img src="../assets/images/Host1.jpg" alt="..." class="host" />
+          </div>
+          <div class="right">
+            <div class="highlight">
+              <img src="../assets/svgs/Face 1.svg" alt="..." class="face" />
+            </div>
+            <h5 class="sub-title">Host 1</h5>
+            <h2 class="name">Porter Severus</h2>
+            <p class="desc">
+              Lorem ipsum dolor sit amet con sectet piscing elit, sed do eiusmod
+              tempor rarylet podofcast.
+            </p>
+            <div class="bottom">
+              <span>follow me:</span>
+              <div class="socials">
+                <img src="../assets/svgs/tiktok-clr.svg" alt="..." />
+                <img src="../assets/svgs/twitter-clr.svg" alt="..." />
+                <img src="../assets/svgs/instagram-clr.svg" alt="..." />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="founder-card">
+          <div class="left">
+            <img src="../assets/images/Host2.jpg" alt="..." class="host" />
+          </div>
+          <div class="right">
+            <div class="highlight">
+              <img src="../assets/svgs/Star.svg" alt="..." />
+            </div>
+            <h5 class="sub-title">Host 2</h5>
+            <h2 class="name">Marques Keith</h2>
+            <p class="desc">
+              Lorem ipsum dolor sit amet con sectet piscing elit, sed do eiusmod
+              tempor rarylet podofcast.
+            </p>
+            <div class="bottom">
+              <span>follow me:</span>
+              <div class="socials">
+                <img src="../assets/svgs/tiktok-clr.svg" alt="..." />
+                <img src="../assets/svgs/twitter-clr.svg" alt="..." />
+                <img src="../assets/svgs/instagram-clr.svg" alt="..." />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- about-section-end -->
+
+    <!-- sponsor-section -->
+    <section class="sponsor-section">
+      <div class="title-wrapper">
+        <h2 class="section-title">
+          <img src="../Assets/Svgs/Sparkle2.svg" alt="..." class="left-hl" />Our
+          Sponsor
+        </h2>
+        <p class="section-desc">Our current official sponsor</p>
+      </div>
+      <!-- slider -->
+      <div class="container">
+        <div class="slider-with-btn" data-slider>
+          <ul class="slider__track" data-slider-track>
+            <li>
+              <div class="slide">
+                <div class="slide-header">
+                  <img src="../assets/svgs/GooglePodcast.svg" alt="..." />
+                </div>
+                <p class="desc">
+                  Quis dictum cursus faucibus mattis dignissim. Pellentes que
+                  purus in sed sodales in mauris molestie. Eleifend estcon
+                  sctetur interdum eu in auctor. Gravida leo et.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <div class="slide-header">
+                  <img src="../assets/svgs/Spotify.svg" alt="..." />
+                </div>
+                <p class="desc">
+                  Quis dictum cursus faucibus mattis dignissim. Pellentes que
+                  purus in sed sodales in mauris molestie. Eleifend estcon
+                  sctetur interdum eu in auctor. Gravida leo et.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <div class="slide-header">
+                  <img src="../assets/svgs/Youtube.svg" alt="..." />
+                </div>
+                <p class="desc">
+                  Quis dictum cursus faucibus mattis dignissim. Pellentes que
+                  purus in sed sodales in mauris molestie. Eleifend estcon
+                  sctetur interdum eu in auctor. Gravida leo et.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="slider__buttons">
+            <button class="slider__button" data-slider-prev disabled>
+              <img src="../assets/svgs/ArrowLeftCircle.svg" alt="..." />
+            </button>
+            <button class="slider__button" data-slider-next>
+              <img src="../assets/svgs/ArrowRightCircle.svg" alt="..." />
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- slider end -->
+    </section>
+    <!-- sponsor-section-end -->
+
+    <!-- contact-section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="title-wrapper">
+          <h2 class="section-title">
+            <img
+              src="../Assets/Svgs/Scribble5.svg"
+              alt="..."
+              class="right-hl"
+            />Get in touch
+          </h2>
+          <p class="section-desc">Send your message to us</p>
+        </div>
+        <form action="">
+          <div class="form-wrapper">
+            <div class="form-item">
+              <label class="form-item-label" for="name">Full name</label>
+              <input type="text" placeholder="Full name" class="field" />
+            </div>
+            <div class="form-item">
+              <label class="form-item-label" for="name">Email</label>
+              <input
+                type="text"
+                placeholder="johndoe@gmail.com"
+                class="field"
+              />
+            </div>
+            <div class="form-item">
+              <label class="form-item-label" for="name">Phone</label>
+              <input type="text" placeholder="Phone" class="field" />
+            </div>
+            <div class="form-item">
+              <label class="form-item-label" for="name">Subject</label>
+              <input type="text" placeholder="Subject..." class="field" />
+            </div>
+            <div class="form-item text-area">
+              <label class="form-item-label" for="name">Message</label>
+              <textarea
+                type="text"
+                placeholder="Your message goes here..."
+                class="field text-area-field"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-bottom">
+            <p class="required"><span class="star">*</span>required</p>
+            <button class="btn primary-btn primary-lg">SEND MESSAGE</button>
+            <span class="link"
+              >Viverra at port accumsan. <a href="#">Orci non</a>
+            </span>
+          </div>
+        </form>
+      </div>
+      <img src="../Assets/Svgs/Scribble2.svg" alt="..." class="scribble" />
+    </section>
+    <!-- contact-section-end -->
 
     <!-- cta-section -->
     <section class="cta-section">
@@ -158,7 +331,7 @@
     <footer class="footer-section">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-column">
+          <div class="footer-column with-logo">
             <div class="logo">
               <img src="../assets/images/logo.png" alt="..." />
               <span class="year">©2021.</span>
@@ -236,5 +409,6 @@
       </div>
     </footer>
     <!-- footer-section-end -->
+    <script src="../JS/script.js"></script>
   </body>
 </html>
