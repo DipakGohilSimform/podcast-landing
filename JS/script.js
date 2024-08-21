@@ -1,10 +1,9 @@
-// JavaScript to toggle the menu
+// toggle the menu
 document.getElementById("hamburger").addEventListener("click", function () {
   document.getElementById("nav-links").classList.toggle("active");
 });
 
 const slider = document.querySelector("[data-slider]");
-
 const track = slider.querySelector("[data-slider-track]");
 const prev = slider.querySelector("[data-slider-prev]");
 const next = slider.querySelector("[data-slider-next]");
@@ -44,3 +43,25 @@ if (track) {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll("[data-tab-target]");
+  const tabContents = document.querySelectorAll("[data-tab-content]");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = document.querySelector(tab.dataset.tabTarget);
+
+      tabContents.forEach((tabContent) => {
+        tabContent.classList.remove("active");
+      });
+
+      tabs.forEach((tab) => {
+        tab.classList.remove("active");
+      });
+
+      tab.classList.add("active");
+      target.classList.add("active");
+    });
+  });
+});

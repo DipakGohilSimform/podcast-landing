@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../Assets/Images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Podcast|Details</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="header-left">
+        <a class="logo" href="/">
+          <img src="../Assets/Images/logo.png" alt="logo" />
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Episodes</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li class="dropdown">
+            <a href="#">More</a>
+            <ul class="dropdown-content">
+              <li><a href="./podcast-details.html">Podcast Detail</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./single-blog.html">Single Blog</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <button class="hamburger" id="hamburger">
+        &#9776;
+        <!-- This is the hamburger icon -->
+      </button>
+      <div class="cta">
+        <button class="btn secondary-btn">BECOME SPONSOR</button>
+        <button class="btn primary-btn">SUBSCRIBE</button>
+      </div>
+    </div>
+    <!-- header end -->
+
+    <!-- hero-section -->
+    <main class="hero-section">
+      <div class="container">
+        <div class="hero-wrapper-details">
+          <div class="left">
+            <img src="../assets/images/cover3.png" alt="..." />
+          </div>
+          <div class="right">
+            <div class="heading">
+              <span class="ep-no">episode-details</span>
+              <span class="extra">FEATURED EPISODE</span>
+            </div>
+            <h2 class="title">Are you a Perplexed Mind Person?</h2>
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud.
+            </p>
+            <div class="about-host">
+              <div class="info">
+                <img src="../assets/images/Avatar1.png" alt="" />
+                <p>
+                  Hosted by:
+                  <span> Jane Doe </span>
+                </p>
+              </div>
+              <span class="date">Sep 22, 2021</span>
+            </div>
+            <div class="button-wrapper">
+              <button class="btn primary-btn primary-lg">SUBSCRIBE</button>
+              <button class="btn secondary-btn secondary-lg">
+                <span
+                  ><img src="../assets/svgs/Play.svg" alt="..." class="play"
+                /></span>
+                LISTEN NOW <span class="min"> (46 min) </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="../assets/svgs/Vector4.svg" alt="..." class="vector-br" />
+    </main>
+
+    <!-- Episode-section -->
+    <section class="episode-section container">
+      <div class="title-wrapper">
+        <h2 class="section-title">
+          <img src="../Assets/Svgs/Sparkle3.svg" alt="..." class="left-hl" />
+          Latest Episode
+        </h2>
+      </div>
+      <!-- tabs-section -->
+      <ul class="tabs">
+        <li data-tab-target="#all" class="tab active">All</li>
+        <li data-tab-target="#business" class="tab">Business</li>
+        <li data-tab-target="#comedy" class="tab">Comedy</li>
+        <li data-tab-target="#education" class="tab">Education</li>
+        <li data-tab-target="#health" class="tab">Health</li>
+        <li data-tab-target="#news" class="tab">News</li>
+        <li data-tab-target="#tech" class="tab">Tech</li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="all" data-tab-content class="active">
+          <div class="content-card-wrapper">
+            <div class="content-card with-shadow">
+              <div class="episode-info">
+                <img src="../assets/images/Ep6.png" alt="..." />
+                <div class="episode-content">
+                  <h4 class="episode-no">Eps. 6</h4>
+                  <h3 class="episode-title red">Pandemic Becoming Endemic</h3>
+                  <p class="episode-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur ac ultrices odio.
+                  </p>
+                </div>
+              </div>
+              <div class="other-details">
+                <div class="tags">
+                  <span class="tag">covid-19</span>
+                  <span class="tag">health</span>
+                </div>
+                <div class="host">
+                  <h4 class="title">Hosted by:</h4>
+                  <div class="host-wrapper">
+                    <img src="../assets/images/Avatar1.png" alt="avtar1" />
+                    <img src="../assets/images/Avatar2.png" alt="avtar2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-card">
+              <div class="episode-info">
+                <img src="../assets/images/Ep6.png" alt="..." />
+                <div class="episode-content">
+                  <h4 class="episode-no">Eps. 5</h4>
+                  <h3 class="episode-title">Tesla Autopilot Controversy</h3>
+                  <p class="episode-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur ac ultrices odio.
+                  </p>
+                </div>
+              </div>
+              <div class="other-details">
+                <div class="tags">
+                  <span class="tag">automation</span>
+                  <span class="tag">tech</span>
+                </div>
+                <div class="host">
+                  <h4 class="title">Hosted by:</h4>
+                  <div class="host-wrapper">
+                    <img src="../assets/images/Avatar1.png" alt="avtar1" />
+                    <img src="../assets/images/Avatar2.png" alt="avtar2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-card">
+              <div class="episode-info">
+                <img src="../assets/images/Ep6.png" alt="..." />
+                <div class="episode-content">
+                  <h4 class="episode-no">Eps. 4</h4>
+                  <h3 class="episode-title">Women's Rights? Is it alright?</h3>
+                  <p class="episode-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur ac ultrices odio.
+                  </p>
+                </div>
+              </div>
+              <div class="other-details">
+                <div class="tags">
+                  <span class="tag">women's rights</span>
+                </div>
+                <div class="host">
+                  <h4 class="title">Hosted by:</h4>
+                  <div class="host-wrapper">
+                    <img src="../assets/images/Avatar1.png" alt="avtar1" />
+                    <img src="../assets/images/Avatar2.png" alt="avtar2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-card with-shadow">
+              <div class="episode-info">
+                <img src="../assets/images/Ep6.png" alt="..." />
+                <div class="episode-content">
+                  <h4 class="episode-no">Eps. 3</h4>
+                  <h3 class="episode-title red">
+                    How to Deal with Self-Confidence
+                  </h3>
+                  <p class="episode-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur ac ultrices odio.
+                  </p>
+                </div>
+              </div>
+              <div class="other-details">
+                <div class="tags">
+                  <span class="tag">self-esteem</span>
+                  <span class="tag">health</span>
+                </div>
+                <div class="host">
+                  <h4 class="title">Hosted by:</h4>
+                  <div class="host-wrapper">
+                    <img src="../assets/images/Avatar1.png" alt="avtar1" />
+                    <img src="../assets/images/Avatar2.png" alt="avtar2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-card with-shadow">
+              <div class="episode-info">
+                <img src="../assets/images/Ep6.png" alt="..." />
+                <div class="episode-content">
+                  <h4 class="episode-no">Eps. 2</h4>
+                  <h3 class="episode-title red">
+                    Type of Social Classes of People
+                  </h3>
+                  <p class="episode-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur ac ultrices odio.
+                  </p>
+                </div>
+              </div>
+              <div class="other-details">
+                <div class="tags">
+                  <span class="tag">social class</span>
+                  <span class="tag">wealth</span>
+                </div>
+                <div class="host">
+                  <h4 class="title">Hosted by:</h4>
+                  <div class="host-wrapper">
+                    <img src="../assets/images/Avatar1.png" alt="avtar1" />
+                    <img src="../assets/images/Avatar2.png" alt="avtar2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-card">
+              <div class="episode-info">
+                <img src="../assets/images/Ep6.png" alt="..." />
+                <div class="episode-content">
+                  <h4 class="episode-no">Eps. 1</h4>
+                  <h3 class="episode-title">
+                    Are you a Perplexed Mind Person?
+                  </h3>
+                  <p class="episode-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur ac ultrices odio.
+                  </p>
+                </div>
+              </div>
+              <div class="other-details">
+                <div class="tags">
+                  <span class="tag">mind-behaviour</span>
+                  <span class="tag">health</span>
+                </div>
+                <div class="host">
+                  <h4 class="title">Hosted by:</h4>
+                  <div class="host-wrapper">
+                    <img src="../assets/images/Avatar1.png" alt="avtar1" />
+                    <img src="../assets/images/Avatar2.png" alt="avtar2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="business" data-tab-content>
+          <h1>Business</h1>
+          <p>Some information on business.</p>
+        </div>
+        <div id="comedy" data-tab-content>
+          <h1>Comedy</h1>
+          <p>Some comedy content.</p>
+        </div>
+        <div id="education" data-tab-content>
+          <h1>Education</h1>
+          <p>Information on education.</p>
+        </div>
+        <div id="health" data-tab-content>
+          <h1>Health</h1>
+          <p>Some health content.</p>
+        </div>
+        <div id="news" data-tab-content>
+          <h1>News</h1>
+          <p>News content here.</p>
+        </div>
+        <div id="tech" data-tab-content>
+          <h1>Tech</h1>
+          <p>Some information on tech.</p>
+        </div>
+      </div>
+      <!-- tabs-section-end -->
+    </section>
+    <!-- Episode-section-end -->
+
+    <!-- hero-section-end -->
+
+    <!-- cta-section -->
+    <section class="cta-section">
+      <div class="title-wrapper">
+        <p class="tag">BETA</p>
+        <h2 class="section-title">Available now Pod of Cast App</h2>
+        <p class="section-desc">We just launched our podcast app!</p>
+      </div>
+      <div class="btn-wrapper">
+        <button class="btn primary-btn primary-lg">
+          BROWSE ALL <img src="../assets/svgs/Sparkle.svg" alt="..." />
+        </button>
+      </div>
+      <div class="extra">
+        <p class="desc">Content also available on:</p>
+        <div class="socials">
+          <img src="../assets/svgs/GooglePodcastDark.svg" alt="..." />
+          <img src="../assets/svgs/SpotifyDark.svg" alt="..." />
+          <img src="../assets/svgs/YoutubeDark.svg" alt="..." />
+        </div>
+      </div>
+      <img
+        src="../assets/images/CtaVector1.png"
+        alt="..."
+        class="cta-vector-left"
+      />
+      <img
+        src="../assets/images/CtaVector2.png"
+        alt="..."
+        class="cta-vector-right"
+      />
+    </section>
+    <!-- cta-section-end -->
+
+    <!-- footer-section -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column with-logo">
+            <div class="logo">
+              <img src="../assets/images/logo.png" alt="..." />
+              <span class="year">©2021.</span>
+            </div>
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="socials">
+              <a href="#">
+                <img src="../assets/svgs/Twitter.svg" alt="..." />
+              </a>
+              <a href="#">
+                <img src="../assets/svgs/Instagram.svg" alt="..." />
+              </a>
+              <a href="#">
+                <img src="../assets/svgs/Tiktok.svg" alt="..." />
+              </a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <ul class="footer-links">
+              <li>
+                <a href="#" class="footer-link">About</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Testimonials</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Features</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <ul class="footer-links">
+              <li>
+                <a href="#" class="footer-link">Episodes</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column-platform">
+            <div class="platform-wrapper">
+              <h5 class="footer-title">
+                Listen to episodes on your fav platform:
+              </h5>
+              <div class="socials">
+                <img src="../assets/svgs/GooglePodcast.svg" alt="..." />
+                <img src="../assets/svgs/Spotify.svg" alt="..." />
+                <img src="../assets/svgs/Youtube.svg" alt="..." />
+              </div>
+              <h5 class="footer-title">App available on:</h5>
+              <div class="socials">
+                <img src="../assets/svgs/AppStore.svg" alt="..." />
+                <img src="../assets/svgs/GooglePlay.svg" alt="..." />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyright">
+            ©2022. All Rights Reserved.
+            <span class="red"> Pod of Cast </span>
+          </div>
+          <div class="right">
+            <span>Terms</span>
+            <img src="../assets/svgs/Dot.svg" alt="..." />
+            <span>Privacy</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer-section-end -->
+    <script src="../JS/script.js"></script>
+  </body>
+</html>

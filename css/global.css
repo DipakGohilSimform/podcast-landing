@@ -246,4 +246,9 @@ body {
     .title-wrapper .section-title .right-hl {
         display: none;
     }
+
+    .title-wrapper .section-title {
+        font-size: 48px;
+        line-height: 58px;
+    }
 }
