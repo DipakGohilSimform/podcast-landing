@@ -103,6 +103,7 @@ body {
 }
 
 .title-wrapper .section-title.sm {
+    max-width: 777px;
     font-size: 36.65px;
     position: relative;
     margin-top: 60px;
@@ -113,6 +114,12 @@ body {
     transform: rotate(260deg);
     top: -20px;
     left: -50px;
+}
+
+.title-wrapper .section-title.sm .left-hl {
+    transform: rotate(280deg);
+    top: -60px;
+    left: -90px;
 }
 
 .title-wrapper .section-title.sm .right-hl {
