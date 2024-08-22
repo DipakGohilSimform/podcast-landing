@@ -11,6 +11,11 @@
   margin-bottom: 64px;
   z-index: 100;
   background-color: var(--champagne);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.header.box-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .header .header-left {
@@ -27,12 +32,20 @@
   list-style-type: none;
 }
 
+.header .header-left .nav-links .mobile-only {
+  display: none;
+}
+
 .header .header-left .nav-links a {
   font-size: 16px;
   font-weight: 700;
   line-height: 25.6px;
   color: var(--black);
   text-decoration: none;
+}
+
+.header .header-left .nav-links a:hover {
+  color: var(--vermillion);
 }
 
 .header .logo {
@@ -514,8 +527,10 @@
 
 .writer {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .writer .avtar {
@@ -564,12 +579,12 @@
 .about-quote::after {
   content: "";
   position: absolute;
-  right: -53px;
+  right: -20px;
   top: -12px;
   background: url("../Assets/Svgs/Star2.svg");
   background-repeat: no-repeat;
-  width: 100px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   transform: scale(2);
 }
 
@@ -602,7 +617,12 @@
   padding: 16px;
   border: 2px solid var(--black);
   border-radius: 8px;
+  transition: all 0.3s ease-out;
+}
+
+.about-section .founder-card-wrapper .founder-card:hover {
   box-shadow: 10px 10px 0px 0px var(--black);
+  transform: translate(-10px, -10px);
 }
 
 .about-section .founder-card-wrapper .founder-card .host {
@@ -677,7 +697,7 @@
 .testimonials-section {
   position: relative;
   background-color: var(--alice-blue);
-  padding: 140px;
+  padding-block: 140px;
 }
 
 .testimonials-section .slide {
@@ -775,10 +795,12 @@
   background-color: var(--white);
   padding: 16px;
   flex: 1 1 400px;
+  transition: all 0.3s ease-out;
 }
 
-.content-card-wrapper .content-card.with-shadow {
-  box-shadow: 10px 10px 0px 0px #81ADC8;
+.content-card-wrapper .content-card:hover {
+  box-shadow: 10px 10px 0px 0px var(--pewter-blue);
+  transform: translate(-10px, -10px);
 }
 
 .content-card-wrapper .content-card .episode-info {
@@ -1026,6 +1048,7 @@
 
 .blog-wrapper .blog:hover {
   box-shadow: 10px 10px 0px 0px var(--black);
+  transform: translate(-10px, -10px);
 }
 
 .blog-wrapper .blog img {
@@ -1072,6 +1095,8 @@
 
 .blog-wrapper .blog .blog-bottom {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   align-items: center;
   justify-content: space-between;
 }
@@ -1197,6 +1222,19 @@
   color: var(--vermillion);
 }
 
+.footer-section .footer-content a {
+  color: var(--black);
+}
+
+.footer-section .footer-content a svg {
+  height: 25px;
+  width: 25px;
+}
+
+.footer-section .footer-content a:hover svg {
+  color: var(--vermillion);
+}
+
 .footer-section .footer-column-platform {
   flex: 1 1 300px;
 }
@@ -1236,14 +1274,20 @@
 
 .footer-section .footer-bottom .copyright .red {
   color: var(--vermillion);
+  text-decoration: none;
 }
 
 .footer-section .footer-bottom .right {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-section .footer-bottom .right a {
   font-size: 12px;
   font-weight: 500;
   line-height: 19.2px;
-  display: flex;
-  gap: 10px;
+  color: var(--davys-grey);
+  text-decoration: none;
 }
 
 .sponsor-section {
@@ -1499,6 +1543,25 @@
 }
 
 
+@media (max-width: 1400px) {
+
+  .about-quote::before,
+  .about-quote::after,
+  .blog-wrapper .left-hl,
+  .blog-wrapper .right-hl {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .content-card-wrapper .sparkle,
+  .pricing-section .pricing-card-wrapper::before,
+  .pricing-section .pricing-card-wrapper::after {
+    display: none;
+  }
+}
+
 
 @media (max-width: 992px) {
 
@@ -1525,9 +1588,27 @@
   .cta-section .cta-vector-left {
     display: none;
   }
+
+  .about-quote::before,
+  .about-quote::after,
+  .blog-wrapper .left-hl,
+  .blog-wrapper .right-hl,
+  .content-card-wrapper .sparkle,
+  .header .dropdown {
+    display: none;
+  }
+
+  .header .header-left .nav-links .mobile-only {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
+  .hero-section .hero-wrapper .hero-title {
+    font-size: 75px;
+    line-height: 85px;
+  }
+
   .hero-section .hero-wrapper .cta-wrapper button {
     width: 100%;
   }

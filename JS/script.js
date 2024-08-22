@@ -1,3 +1,13 @@
+// header scroll
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
+  if (window.scrollY > 0) {
+    header.classList.add("box-shadow");
+  } else {
+    header.classList.remove("box-shadow");
+  }
+});
+
 // toggle the menu
 document.getElementById("hamburger").addEventListener("click", function () {
   document.getElementById("nav-links").classList.toggle("active");
@@ -43,25 +53,3 @@ if (track) {
     }
   });
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const tabs = document.querySelectorAll("[data-tab-target]");
-  const tabContents = document.querySelectorAll("[data-tab-content]");
-
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      const target = document.querySelector(tab.dataset.tabTarget);
-
-      tabContents.forEach((tabContent) => {
-        tabContent.classList.remove("active");
-      });
-
-      tabs.forEach((tab) => {
-        tab.classList.remove("active");
-      });
-
-      tab.classList.add("active");
-      target.classList.add("active");
-    });
-  });
-});

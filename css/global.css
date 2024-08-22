@@ -6,6 +6,7 @@
 
 body {
     font-family: "Montserrat Alternates", sans-serif;
+    overflow-x: hidden;
 }
 
 :root {
@@ -44,7 +45,7 @@ body {
 }
 
 .btn:hover {
-    transform: scale(0.9);
+    transform: scale(0.9) !important;
 }
 
 .btn-wrapper {
@@ -167,7 +168,7 @@ body {
     position: absolute;
     bottom: -80px;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0) !important;
     height: 150px;
     z-index: 5;
 }
@@ -258,4 +259,14 @@ body {
         font-size: 48px;
         line-height: 58px;
     }
+}
+
+.socials svg {
+    color: var(--black);
+    height: 24px;
+    width: 24px;
+}
+
+.socials svg:hover {
+    color: var(--vermillion);
 }
