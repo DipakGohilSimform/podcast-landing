@@ -164,6 +164,7 @@
 }
 
 .hero-section .hero-wrapper.blog {
+  padding-inline: 20px;
   margin-bottom: 0;
 }
 
@@ -429,12 +430,17 @@
   bottom: -30px;
   left: 50%;
   transform: translate(-50%, 0);
+  margin: 0 auto;
   z-index: 5;
+  max-width: 570px;
+  width: 100%;
+  padding-inline: 20px;
 }
 
 .hero-section .search-wrapper {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 
 .hero-section .hero-search {
